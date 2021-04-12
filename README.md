@@ -6,7 +6,20 @@
     `npm install -g vue-cli`
     `npm install`
 #### 4.	Update nuxt.config.js to add a base URL (replace my-project by your project name):
-    `router: { base: '/my-project/' },`
+    `router: { base: '/my-project/' }`
+    
+```js
+    
+    import theme from '@nuxt/content-theme-docs'
+
+    export default theme({
+     docs: {
+       primaryColor: '#E24F55'
+    },
+    router: { base: '/installation-nutx/' }
+  })
+```
+    
 #### 5.	Install push-dir:
     `npm install push-dir --save-dev`
 #### 6.	Create a deploy command to publish to Github pages by editing package.json file and adding this line at the beginning of the script section:
