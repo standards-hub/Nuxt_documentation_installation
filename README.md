@@ -24,6 +24,31 @@
     `npm install push-dir --save-dev`
 #### 6.	Create a deploy command to publish to Github pages by editing package.json file and adding this line at the beginning of the script section:
     `"deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",`
+    
+For example
+
+```
+{
+  "name": "installation-nutx",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/installation-nutx.git"
+  },
+  "dependencies": {
+    "@nuxt/content-theme-docs": "^0.10.1",
+    "nuxt": "^2.15.2"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
+```
+
 #### 7.	Then commit and push your code to your repository (replace me by your name and my-project by your project name):
       `git init
       `git add .
