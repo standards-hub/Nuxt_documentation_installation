@@ -56,7 +56,7 @@ For example
       `git remote add origin https://github.com/userAccount/my-project.git
       `git push -u origin master`
       
-> Note: It is not needed if it is already a repository     
+> Note: "$ git init" command, shouldn't be needed if it is already a repository.    
  
 #### 8.	Generate the site and publish it:
     `npm run generate`
