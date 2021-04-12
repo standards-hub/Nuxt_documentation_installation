@@ -50,11 +50,14 @@ For example
 ```
 
 #### 7.	Then commit and push your code to your repository (replace me by your name and my-project by your project name):
-      `git init
+      `git init *   
       `git add .
       `git commit -m "init"
       `git remote add origin https://github.com/me/my-project.git
       `git push -u origin master`
+      
+> Note: It is not needed if it is already a repository     
+ 
 #### 8.	Generate the site and publish it:
     `npm run generate`
     `npm run deploy`
