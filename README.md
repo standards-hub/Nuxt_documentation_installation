@@ -53,7 +53,7 @@ For example
       `git init *   
       `git add .
       `git commit -m "init"
-      `git remote add origin https://github.com/me/my-project.git
+      `git remote add origin https://github.com/userAccount/my-project.git
       `git push -u origin master`
       
 > Note: It is not needed if it is already a repository     
