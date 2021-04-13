@@ -66,3 +66,15 @@ For example
     If there is an error, try "npm install -g gh-pages --save-dev", it will install any missing packages, then run the next command:
     
     `npm run deploy`
+
+#### 9. To run the content in the local Host
+
+    `yarn dev`
+    
+ The local host: Listening on: http://localhost:3000/test-nuxt/
+ 
+#### 10. Static Content
+It is stored in the folder called `dist`
+
+'content / en /` this folder stores the content to modify.
+    
