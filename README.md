@@ -50,13 +50,15 @@ For example
 ```
 
 #### 7.	Then commit and push your code to your repository (replace me by your name and my-project by your project name):
-      `git init *   
+      `git init
       `git add .
       `git commit -m "init"
       `git remote add origin https://github.com/userAccount/my-project.git
+      
+      Then, create "gh-pages" in the GitHub repository, then run the command:
+      
       `git push -u origin master`
       
-> Note: "$ git init" command, shouldn't be needed if it is already a repository.    
  
 #### 8.	Generate the site and publish it:
     `npm run generate`
