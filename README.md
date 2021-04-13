@@ -62,4 +62,7 @@ For example
  
 #### 8.	Generate the site and publish it:
     `npm run generate`
+    
+    If there is an error, try "npm install -g gh-pages --save-dev", it will install any missing packages, then run the next command:
+    
     `npm run deploy`
