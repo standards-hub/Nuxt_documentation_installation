@@ -16,7 +16,7 @@
      docs: {
        primaryColor: '#E24F55'
     },
-    router: { base: '/installation-nutx/' }
+    router: { base: '/<my-project>/' }
   })
 ```
     
@@ -37,7 +37,7 @@ For example
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/installation-nutx.git"
+    "deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/<my-project>.git"
   },
   "dependencies": {
     "@nuxt/content-theme-docs": "^0.10.1",
