@@ -23,7 +23,7 @@
 #### 5.	Install push-dir:
     `npm install push-dir --save-dev`
 #### 6.	Create a deploy command to publish to Github pages by editing package.json file and adding this line at the beginning of the script section:
-    `"deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",`
+    `""deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/<my-project>.git"",`
     
 For example
 
