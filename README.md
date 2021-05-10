@@ -5,7 +5,7 @@
 #### 3.	Install vue-cli:
     `npm install -g vue-cli`
     `npm install`
-#### 4.	Update nuxt.config.js to add a base URL (replace my-project by your project name):
+#### 4.	Update `nuxt.config.js` to add a base URL (replace my-project by your project name):
     `router: { base: '/my-project/' }`
     
 ```js
@@ -22,7 +22,7 @@
     
 #### 5.	Install push-dir:
     `npm install push-dir --save-dev`
-#### 6.	Create a deploy command to publish to Github pages by editing package.json file and adding this line at the beginning of the script section:
+#### 6.	Create a deploy command to publish to Github pages by editing `package.json` file and adding this line at the beginning of the script section:
     `"deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/<my-project>.git",`
     
 For example
