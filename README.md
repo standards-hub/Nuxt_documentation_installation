@@ -62,6 +62,8 @@ For example
 > If there are errors, try `git push -f origin master`
  
 #### 8.	Generate the site and publish it:
+If `package.json` is updated, then run: '$ npm install`.
+
     `npm run generate`
     
     If there is an error, try "npm install -g gh-pages --save-dev", it will install any missing packages, then run the next command:
