@@ -59,6 +59,7 @@ For example
       
       `git push -u origin master`
       
+> If there are errors, try `git push -f origin master`
  
 #### 8.	Generate the site and publish it:
     `npm run generate`
