@@ -62,7 +62,7 @@ For example
 > If there are errors, try `git push -f origin master`
  
 #### 8.	Generate the site and publish it:
-If `package.json` is updated, then run: '$ npm install`.
+If `package.json` is updated, then run: `$ npm install`.
 
     `npm run generate`
     
