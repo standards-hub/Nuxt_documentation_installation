@@ -60,6 +60,9 @@ For example
       `git push -u origin master`
       `git push -f origin master`
       
+      To pull from the upstream repository when the normal `git pull` doesn't work.
+      `git pull origin master --allow-unrelated-histories`
+      
 > If there are errors, try `git push -f origin master`
  
 #### 8.	Generate the site and publish it:
