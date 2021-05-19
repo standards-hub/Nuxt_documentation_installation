@@ -58,6 +58,7 @@ For example
       Then, create "gh-pages" in the GitHub repository, then run the command:
       
       `git push -u origin master`
+      `git push -f origin master`
       
 > If there are errors, try `git push -f origin master`
  
