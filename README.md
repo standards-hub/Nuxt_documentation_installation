@@ -83,5 +83,10 @@ If `package.json` is updated, then run: `$ npm install`.
 #### 10. Static Content
 It is stored in the folder called `dist`
 
-'content / en /` this folder stores the content to modify.
+`content / en /` this folder stores the content to modify.
     
+## Content
+
+### Favicon
+File: layouts/home.html
+Line 10: `<link rel="shortcut icon" type="image/png" href="./img/cim-color.png">`  add a (.) before (/).
