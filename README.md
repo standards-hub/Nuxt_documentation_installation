@@ -82,11 +82,14 @@ Then, create "gh-pages" in the GitHub repository, then run the command:
 ```
 git push -u origin master
 ```
+If there are errors, try...
+
 ```
 git push -f origin master
 ```
       
 To pull from the upstream repository when the normal `git pull` doesn't work.
+
 ```
 git pull origin master --allow-unrelated-histories
 ```
