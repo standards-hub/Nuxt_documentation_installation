@@ -31,9 +31,13 @@ router: { base: '/my-project/' }
 ```
     
 #### 5.	Install push-dir:
-    `npm install push-dir --save-dev`
+```js
+npm install push-dir --save-dev
+```
 #### 6.	Create a deploy command to publish to Github pages by editing `package.json` file and adding this line at the beginning of the script section:
-    `"deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/<my-project>.git",`
+```js
+"deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/<my-project>.git"
+```
     
 For example
 
@@ -60,35 +64,59 @@ For example
 ```
 
 #### 7.	Then commit and push your code to your repository (replace me by your name and my-project by your project name):
-      `git init
-      `git add .
-      `git commit -m "init"
-      `git remote add origin https://github.com/userAccount/my-project.git
+```
+git init
+```
+```
+git add .
+```
+```
+git commit -m "init"
+```
+```
+git remote add origin https://github.com/userAccount/my-project.git
+```
+
+Then, create "gh-pages" in the GitHub repository, then run the command:
       
-      Then, create "gh-pages" in the GitHub repository, then run the command:
+```
+git push -u origin master
+```
+```
+git push -f origin master
+```
       
-      `git push -u origin master`
-      `git push -f origin master`
+To pull from the upstream repository when the normal `git pull` doesn't work.
+```
+git pull origin master --allow-unrelated-histories
+```
       
-      To pull from the upstream repository when the normal `git pull` doesn't work.
-      `git pull origin master --allow-unrelated-histories`
-      
-> If there are errors, try `git push -f origin master`
+If there are errors, try 
+
+```
+git push -f origin master
+```
  
 #### 8.	Generate the site and publish it:
 If `package.json` is updated, then run: `$ npm install`.
 
-    `npm run generate`
+```
+npm run generate
+```
     
-    If there is an error, try "npm install -g gh-pages --save-dev", it will install any missing packages, then run the next command:
+If there is an error, try "npm install -g gh-pages --save-dev", it will install any missing packages, then run the next command:
     
-    `npm run deploy`
+```
+npm run deploy
+```
 
 #### 9. To run the content in the local Host
 
-    `yarn dev`
+```
+yarn dev
+```
     
- The local host: Listening on: http://localhost:3000/test-nuxt/
+The local host: Listening on: http://localhost:3000/test-nuxt/
  
 #### 10. Static Content
 It is stored in the folder called `dist`
