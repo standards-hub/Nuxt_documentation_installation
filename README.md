@@ -1,7 +1,9 @@
 # Create and publish a Nuxt.js powered website on Github pages
 #### 1.  To get started quickly you can use the create-nuxt-content-docs package.
     ```yarn
+    
     yarn create nuxt-content-docs <project-name>
+    
     ```
     
 #### 2.	cd my-project
