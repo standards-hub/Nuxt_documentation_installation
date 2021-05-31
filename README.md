@@ -54,7 +54,7 @@ For example
     "deploy": "npm run build && gh-pages -d dist --repo https://github.com/standards-hub/<my-project>.git"
   },
   "dependencies": {
-    "@nuxt/content-theme-docs": "^0.10.1",
+    "@nuxt/content-theme-docs": "^0.7.1",
     "nuxt": "^2.15.2"
   },
   "devDependencies": {
