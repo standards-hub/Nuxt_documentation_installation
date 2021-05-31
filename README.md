@@ -7,10 +7,16 @@
     
 #### 2.	cd my-project
 #### 3.	Install vue-cli:
-    `npm install -g vue-cli`
-    `npm install`
+```js
+npm install -g vue-cli
+```
+```js
+npm install
+```
 #### 4.	Update `nuxt.config.js` to add a base URL (replace my-project by your project name):
-    `router: { base: '/my-project/' }`
+```js
+router: { base: '/my-project/' }
+```
     
 ```js
     
