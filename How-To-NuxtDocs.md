@@ -60,6 +60,42 @@ The above command will build `development` version of this project and run web s
 
 > Your documentation has been created successfully!
 
+## Customizing project configuration
+
+The project customizations are achieved by adjusting `nuxt.config.js`, `tailwind.config.js` and `content/settings.json` file.
+
+### nuxt.config.js
+
+This configuration file is general Nuxt configuration file. The setup the project `nuxt.config.js` allows you to add or to override the default *theme* config.
+
+An example of how `nuxt.config.js` is structured and adjustment can be find at https://content.nuxtjs.org/themes/docs#nuxtconfigjs
+
+### tailwind.config.js
+
+This project is using the [tailwind](https://tailwindcss.com/) CSS framework for styling.
+
+You can change the default *theme* styling by creating your own `tailwind.config.js` in the root of the project.
+The whole *theme* styling is generated around **primary** color in order to be easily adjustable. Take look at [default](https://github.com/nuxt/content/blob/dev/packages/theme-docs/src/tailwind.config.js) styling if you want to lear how to change fonts, typography or other aspects of web page styling.
+
+### content/settings.json
+
+Use the [settings](https://content.nuxtjs.org/themes/docs#settings) file in `content` folder to adjust the logo image, twitter account or default layout of the documentation among the other *theme* parameters.
+
+## Creating content
+
+Writing the content is the main activity. There are several basic aspects of [writing documentation in Markdown](https://content.nuxtjs.org/writing/#markdown) format.
+
+In addition the nuxt content documentation project provides additional capabilities for more elaborate presentation elements. The *theme* provides some general Vue.js [components](https://content.nuxtjs.org/themes/docs#components) that you can use directly in your markdown content.
+
+Content should be organized in files based on supported [locals](https://content.nuxtjs.org/themes/docs#locales) and desired [routing](https://content.nuxtjs.org/themes/docs#routing). The *theme* default local is `en` so the documents for this local are located in `./content/en/` folder.
+
+Every document must provide set of parameters in  document [front-matter](https://content.nuxtjs.org/themes/docs#front-matter) in order for a *theme* to work properly. The **required** ones are:
+
+* title - The title of the page will be injected in meta tags of the HTML page
+* description - The description of the page will be injected in meta tags of the HTML page
+* *position* - Number used in sorting the documents in the navigation
+
+List of optional fields are defined [here](https://content.nuxtjs.org/themes/docs#front-matter).
 
 ## Deploy
 
