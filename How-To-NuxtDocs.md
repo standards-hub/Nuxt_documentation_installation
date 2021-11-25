@@ -75,7 +75,7 @@ An example of how `nuxt.config.js` is structured and adjustment can be find at h
 This project is using the [tailwind](https://tailwindcss.com/) CSS framework for styling.
 
 You can change the default *theme* styling by creating your own `tailwind.config.js` in the root of the project.
-The whole *theme* styling is generated around **primary** color in order to be easily adjustable. Take look at [default](https://github.com/nuxt/content/blob/dev/packages/theme-docs/src/tailwind.config.js) styling if you want to lear how to change fonts, typography or other aspects of web page styling.
+The whole *theme* styling is generated around **primary** color in order to be easily adjustable. Take look at [default](https://github.com/nuxt/content/blob/dev/packages/theme-docs/src/tailwind.config.js) styling if you want to learn how to change fonts, typography or other aspects of web page styling.
 
 ### content/settings.json
 
@@ -99,7 +99,7 @@ List of optional fields are defined [here](https://content.nuxtjs.org/themes/doc
 
 ## Deploy
 
-Since this is a Nuxt project it should follow the deployment recommendations from the official Nuxt documentation. THere are multiple [deployment targets](https://nuxtjs.org/deployments) explain there but the one for the GitHub pages will be the one we will be using in this document.
+Since this is a Nuxt project it should follow the deployment recommendations from the official Nuxt documentation. There are multiple [deployment targets](https://nuxtjs.org/deployments) explain there but the one for the GitHub pages will be the one we will be using in this document.
 
 To deploy via GitHub Actions, create or adjust the workflow which pushes the generated files from the `dist` folder to your default GitHub Pages branch `gh-pages`.
 
