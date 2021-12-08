@@ -301,6 +301,173 @@ The *index* page will list out our blog posts. Open `pages/index.vue` page and a
 
 Run your *Blog* application and navigate from *index* page to blog article.
 
+## Style your *Blog*
+
+Everything written inside *Blog* markdown content is wrapped inside a `div` with a **class** of `nuxt-content`. This enable easy styling to all elements coming from the markdown file by wrapping them in the `nuxt-content` class.
+
+```html
+<style>
+  .nuxt-content h1 {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .nuxt-content h2 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .nuxt-content p {
+    margin-bottom: 18px;
+  }
+</style>
+```
+
+All other tags can be styled as normal either using [TailwindCSS](https://tailwindcss.com/), the CSS framework selected during the installation of the project, or adding CSS in the style tag.
+
+The [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography) provides a set of `prose` classes that can be used to add beautiful typographic defaults to any vanilla HTML like HTML rendered from Markdown, or pulled from a CMS.
+
+### Layouts
+
+Layouts are used to change the look and feel of Nuxt app. For example to include a sidebar or to provide distinct layouts for mobile and desktop.
+
+The main layout can be altered by adding a `layouts/default.vue` file. The `default.vue` layout will be used for all pages that don't have a layout specified. The minimal `default` layout is shown in the following example:
+
+```js
+<template>
+  <Nuxt />
+</template>
+```
+
+The layout template can be enriched with additional HTML content or Vue components, for example:
+
+```js
+<template>
+  <div class="container mx-auto p-4">
+    <AppHeader />
+    <Nuxt />
+    <AppFooter />
+  </div>
+</template>
+```
+
+Every file in layouts directory will represent a custom layout that is accessible using the `layout` property in the page components.
+For example if the `layouts\authors.vue` represent the page layout for presenting the authors then it can be used in `pages/authors.vue` in the following fashion:
+
+```js
+<script>
+export default {
+  layout: 'authors',
+  // OR
+  layout (context) {
+    return 'authors'
+  }
+}
+</script>
+```
+
+## Custom Components
+
+Components are what makes up the different parts of the page. They can be reused and imported into pages, layouts and even other components.
+Nuxt can auto-import the components you use. To activate this feature put following in `nuxt.config.js` configuration, if it's not already activated:
+
+```js
+export default {
+  components: true
+}
+```
+
+### Create custom component
+
+To create the custom component, for example to show information about the blog post author, create `components/Author.vue` file and put the following content in it:
+
+```js
+<template>
+  <div>
+    <img :src="author.image" />
+    <div>
+      <h4>Author</h4>
+      <p>{{ author.name }}</p>
+      <p>{{ author.bio }}</p>
+    </div>
+  </div>
+</template>
+<script>
+  export default {
+    props: {
+      author: {
+        type: Object,
+        required: true
+      }
+    }
+  }
+</script>
+```
+
+### Using custom components
+
+Created component can be used in other pages to show information about the author of the blog post, for example:
+
+```js
+<template>
+  <article>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.description }}</p>
+
+    <nuxt-content :document="post" />
+
+    <author :author="post.author" />
+  </article>
+</template>
+```
+
+More on how Nuxt handle custom components can be find [here](https://nuxtjs.org/docs/directory-structure/components). 
+
+## Assets
+
+The `assets` directory contains un-compiled assets such as Stylus or Sass files, images, or fonts. The special care should be taken when referencing different type of assets in pages, CSS files or as part of the blog building process.
+
+More details can be find at [assets directory](https://nuxtjs.org/docs/directory-structure/assets) page.
+
+The `static` directory is directly mapped to the server root and contains files that won't be changed. All files in this folder will be automatically served by Nuxt through project root URL. Be sure to check [static](https://nuxtjs.org/docs/directory-structure/static) folder documentation to know how to use and configure it if desired.
+
+## Meta tags, SEO and social links
+
+SEO is basically how Google and other search engines can index your content and present it to people searching for certain keywords or phrases. Search engines and social media platforms look for this information by parsing the `<head>` tag of any given website. The following example set the page title to be equivalent to the title of the post. It’ll also use the post title to set proper meta tags for Open Graph (Facebook) and Twitter.
+
+```js
+head() {
+    return {
+      title: this.post.title,
+      meta: [
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: this.post.title },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: `https://my-blog.com/${this.post.image}`,
+        },
+        // Twitter Card
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.post.title,
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: `https://my-blog.com/${this.post.image}`,
+        }
+      ]
+    }
+}
+```
+
+In this way Google will have an easier time parsing blog content and have good looking preview cards when sharing links to blog posts on social media.
 
 ## Deploy
 
