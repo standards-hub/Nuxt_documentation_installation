@@ -61,6 +61,24 @@ The above command will build `development` version of this project and run web s
 
 > Your documentation has been created successfully!
 
+## Link Local with Upstream Repository
+
+> At this moment you have created a local repository, e.g. `md2html_guidelines` and you want to sync this content with the upstream repository, `https://github.com/jpradocueva/md2html_guidelines.git`, which was created in a separate step.
+
+Add the remote repository in GitHub as a remote `upstream`
+
+`git remote add upstream https://github.com/jpradocueva/md2html_guidelines.git`
+
+Then, push the content from the local repository to upstream with: (assuming the branch is called `master`
+
+`git push --set-upstream master master`
+
+Then, confirm that the setup is correct by running:
+
+`git remote show upstream`
+
+The print out of this command should indicate that the local repository is connected to the upstream.
+
 ## Customizing project configuration
 
 The project customizations are achieved by adjusting `nuxt.config.js`, `tailwind.config.js` and `content/settings.json` file.
