@@ -138,6 +138,8 @@ For a new workflow, paste the following content into a new file called cd.yml in
 
 > ![image](https://user-images.githubusercontent.com/3258579/172229815-0382216f-4b42-4dce-a004-5396143be1b5.png)
 
+> Note: There is no needed for you to create the branch `gh-pages`. This branch will be created automatically by the content in the `cd.yml` file.
+
 
 ```markdown
 name: cd
