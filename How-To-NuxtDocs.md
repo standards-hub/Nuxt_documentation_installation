@@ -134,6 +134,11 @@ With an existing workflow, add the following step:
 
 For a new workflow, paste the following content into a new file called cd.yml in .github/workflows directory:
 
+> Note: Also, in the GitHub repository activate the GitHub Pages by go into `Settings` \ `Pages` and in the `Source` section select:
+
+> ![image](https://user-images.githubusercontent.com/3258579/172229815-0382216f-4b42-4dce-a004-5396143be1b5.png)
+
+
 ```markdown
 name: cd
 
