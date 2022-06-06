@@ -83,6 +83,8 @@ The print out of this command should indicate that the local repository is conne
 
 The project customizations are achieved by adjusting `nuxt.config.js`, `tailwind.config.js` and `content/settings.json` file.
 
+> Note: each time that `nuxt.config.js` file is modified, you may need to force a reset in the GitHub pages Settings by switching off and on the content in the `Socurce` section. See below.
+
 ### nuxt.config.js
 
 This configuration file is general Nuxt configuration file. The setup the project `nuxt.config.js` allows you to add or to override the default *theme* config.
