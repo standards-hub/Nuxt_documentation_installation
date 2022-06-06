@@ -16,6 +16,7 @@ yarn create nuxt-content-docs <project-name>
 # NPX
 npx create-nuxt-content-docs <project-name>
 ```
+> Note: `<project-name>` is the name of the repository already created in GitHub.
 
 ### Example 
 
@@ -33,8 +34,8 @@ If you have already installed `node` then `npm` is already available. [Yarn](htt
 ? Project name: (my-project-docs)
 ? Project title: (Nuxt Content)
 ? Documentation url:
-? GitHub repository (owner/name): (nuxt/content)
-? Twitter username (@username): (@nuxt_js)
+? GitHub repository (owner/name): (jpradocueva/md2html_guidelines)
+? Twitter username (@username): (@jpradocueva)
 ? Package manager: (Use arrow keys)
 ❯ Yarn
   Npm
