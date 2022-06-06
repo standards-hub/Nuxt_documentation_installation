@@ -34,7 +34,7 @@ If you have already installed `node` then `npm` is already available. [Yarn](htt
 ? Project name: (my-project-docs)
 ? Project title: (Nuxt Content)
 ? Documentation url:
-? GitHub repository (owner/name): (jpradocueva/md2html_guidelines)
+? GitHub repository (owner/name): (jpradocueva/github/documents/jpc/md2html_guidelines)
 ? Twitter username (@username): (@jpradocueva)
 ? Package manager: (Use arrow keys)
 ❯ Yarn
