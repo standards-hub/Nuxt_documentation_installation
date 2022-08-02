@@ -69,9 +69,15 @@ Add the remote repository in GitHub as a remote `upstream`
 
 `git remote add upstream https://github.com/jpradocueva/md2html_guidelines.git`
 
+Then, commit all the changes to your local host:
+
+`git add .` and then
+
+`git commit -m "first commit"`
+
 Then, push the content from the local repository to upstream with: (assuming the branch is called `master`
 
-`git push --set-upstream master master`
+`git push --set-upstream upstream master`
 
 Then, confirm that the setup is correct by running:
 
