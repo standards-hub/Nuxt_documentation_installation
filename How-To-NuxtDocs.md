@@ -50,7 +50,37 @@ Once the installation process is done you should change to the newly created fol
 ```bash
 cd my-project-docs/
 ```
+Then, commit to the GitHub repository all the files creating during the setup:
 
+`$ git add .`
+
+then,
+
+`$ git commit -m 'files created during the setup'`
+
+then,
+
+`$ git push`
+
+The system responds with:
+
+> fatal: No configured push destination.
+> Either specify the URL from the command-line or configure a remote repository using
+
+then run the command, e.g.,
+
+`$ git remote add <name> <url>`
+
+and then push using the remote name
+
+`git remote add upstream https://github.com/OpenMobileAlliance/oma_working_groups.git`
+
+The system will provide an error.
+
+>fatal: The current branch main has no upstream branch.>
+>To push the current branch and set the remote as upstream, use
+
+` $ git push --set-upstream upstream main`
 In order to verify that everything is working as expected run the following command:
 
 ```bash
