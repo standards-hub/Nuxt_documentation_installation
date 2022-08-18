@@ -80,6 +80,14 @@ The system will provide an error.
 >fatal: The current branch main has no upstream branch.>
 >To push the current branch and set the remote as upstream, use
 
+Then run the command:
+
+`$ git push --force`
+
+This should resolve the issue.
+
+---
+
 ` $ git push --set-upstream upstream main`
 In order to verify that everything is working as expected run the following command:
 
