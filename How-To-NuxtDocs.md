@@ -152,7 +152,7 @@ If any of the logo names doesn't much the above names, then go to the folder `/c
 
 This configuration file is general Nuxt configuration file. The setup the project `nuxt.config.js` allows you to add or to override the default *theme* config.
 
-An example of how `nuxt.config.js` is structured and adjustment can be find at https://content.nuxtjs.org/themes/docs#nuxtconfigjs
+An example of how `nuxt.config.js` is structured and adjustment can be find at https://github.com/OpenMobileAlliance/dmse-documentation/blob/master/nuxt.config.js
 
 ### tailwind.config.js
 
