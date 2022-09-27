@@ -79,7 +79,7 @@ then run the command, e.g.,
 
 and then push using the remote name
 
-`git remote add upstream https://github.com/OpenMobileAlliance/oma_working_groups.git`
+`git remote add origin https://github.com/OpenMobileAlliance/oma_working_groups.git`
 
 The system will provide an error.
 
