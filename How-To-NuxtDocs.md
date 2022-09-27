@@ -145,6 +145,7 @@ Also delete the file images:
 * preview-dark.png, and
 * preview.png
 
+If any of the logo names doesn't much the above names, then go to the folder `/content` and update the names accordingly in the file `settings.json`
 
 
 ### nuxt.config.js
