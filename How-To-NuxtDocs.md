@@ -50,6 +50,12 @@ Once the installation process is done you should change to the newly created fol
 ```bash
 cd my-project-docs/
 ```
+Initialize the repository as a Git repo.
+
+``` bash
+git init
+```
+
 Then, commit to the GitHub repository all the files creating during the setup:
 
 `$ git add .`
