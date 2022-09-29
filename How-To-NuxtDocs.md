@@ -131,12 +131,18 @@ The print out of this command should indicate that the local repository is conne
 
 ## Customizing project configuration
 
-The project customizations are achieved by adjusting `nuxt.config.js`, `tailwind.config.js` and `content/settings.json` file.
+The project customizations are achieved by adjusting the following files:
 
-> Note: each time that `nuxt.config.js` file is modified, you may need to force a reset in the GitHub pages Settings by switching off and on the content in the `Socurce` section. See below.
+* `static` folder,
+  * `content/settings.json`, (if needed),
+* `nuxt.config.js`, 
+* `tailwind.config.js`, and 
+* `package.json`
 
-### Logo
-Go to `static` folder and replace the following files with the ones for the project:
+> Note: each time that `nuxt.config.js` file is modified, you may need to force a reset in the GitHub pages Settings by switching off and on the content in the `Source` section. See below.
+
+### `static` folder
+Go to `static` folder and replace the following files (logos) with the ones for the project:
 * icon.png
 * logo-dark.svg
 * logo-light.svg
@@ -145,25 +151,34 @@ Also delete the file images:
 * preview-dark.png, and
 * preview.png
 
-If any of the logo names doesn't much the above names, then go to the folder `/content` and update the names accordingly in the file `settings.json`
+#### `content/settings.json`
+If any of the logo names doesn't much the above names, then go to the folder `/content` and update the names accordingly in the file `settings.json`.
 
+See an example of a well formed `settings.json` file, https://github.com/OpenMobileAlliance/dmse-documentation/blob/master/content/settings.json.
+In this file you can configure links to: github, twitter, youtube, linkedin, algolia (search), etc.
 
-### nuxt.config.js
+### `nuxt.config.js`
 
 This configuration file is general Nuxt configuration file. The setup the project `nuxt.config.js` allows you to add or to override the default *theme* config.
 
 An example of how `nuxt.config.js` is structured and adjustment can be find at https://github.com/OpenMobileAlliance/dmse-documentation/blob/master/nuxt.config.js
 
-### tailwind.config.js
+### `tailwind.config.js`
 
 This project is using the [tailwind](https://tailwindcss.com/) CSS framework for styling.
 
 You can change the default *theme* styling by creating your own `tailwind.config.js` in the root of the project.
 The whole *theme* styling is generated around **primary** color in order to be easily adjustable. Take look at [default](https://github.com/nuxt/content/blob/dev/packages/theme-docs/src/tailwind.config.js) styling if you want to learn how to change fonts, typography or other aspects of web page styling.
 
-### content/settings.json
+### `package.json`
 
-Use the [settings](https://content.nuxtjs.org/themes/docs#settings) file in `content` folder to adjust the logo image, twitter account or default layout of the documentation among the other *theme* parameters.
+* `name` property needs to be udpated to the name of the repository
+* `node` is set to version 14.15.1,
+* `npm` is set to version 6.14.11
+
+There is a large number of dependencies and devDependencies, it is better to copy the file below and change the above properties.
+
+An example of a well configure `package.json` file can be seen in https://github.com/OpenMobileAlliance/dmse-documentation/blob/master/package-lock.json.
 
 ## Creating content
 
