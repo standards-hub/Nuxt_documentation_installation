@@ -202,7 +202,7 @@ Since this is a Nuxt project it should follow the deployment recommendations fro
 
 To deploy via GitHub Actions, create or adjust the workflow which pushes the generated files from the `dist` folder to your default GitHub Pages branch `gh-pages`.
 
-With an existing workflow, add the following step:
+With an existing workflow, add the following step to `cd.yml` file on the folder `.github/workflows/cd.yml`. 
 
 ```markdown
 - name: Deploy
@@ -212,6 +212,8 @@ With an existing workflow, add the following step:
     publish_dir: ./dist
 ```
 
+> Note: if this file `cd.yml` doesn't exist, then add folder and file, `.github/workflows/cd.yml`. 
+
 For a new workflow, paste the following content into a new file called cd.yml in .github/workflows directory:
 
 > Note: Also, in the GitHub repository activate the GitHub Pages by go into `Settings` \ `Pages` and in the `Source` section select:
@@ -220,6 +222,8 @@ For a new workflow, paste the following content into a new file called cd.yml in
 
 > Note: There is no needed for you to create the branch `gh-pages`. This branch will be created automatically by the content in the `cd.yml` file.
 
+### `.github/workflows/cd.yml`. 
+Add the following content:
 
 ```markdown
 name: cd
