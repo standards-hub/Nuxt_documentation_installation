@@ -223,6 +223,22 @@ For a new workflow, paste the following content into a new file called cd.yml in
 > Note: There is no needed for you to create the branch `gh-pages`. This branch will be created automatically by the content in the `cd.yml` file.
 
 ### `.github/workflows/cd.yml`. 
+
+An example of the content of this file can be found in https://github.com/OpenMobileAlliance/dmse-documentation/blob/master/.github/workflows/cd.yml
+
+> Note: please note that branch `name`, could be set to `main` or `master` depending of what name you have in your own repository.
+> In case you may need to change `master` for `main`, there are two places where this content needs to be udpated:
+>  on:
+>   push:
+>    branches:
+>      - main
+and
+>     steps:
+>      - name: Checkout 🛎
+>        uses: actions/checkout@main
+
+
+
 Add the following content:
 
 ```markdown
