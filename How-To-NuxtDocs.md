@@ -227,15 +227,10 @@ For a new workflow, paste the following content into a new file called cd.yml in
 An example of the content of this file can be found in https://github.com/OpenMobileAlliance/dmse-documentation/blob/master/.github/workflows/cd.yml
 
 > Note: please note that branch `name`, could be set to `main` or `master` depending of what name you have in your own repository.
-> 
 > In case you may need to change `master` for `main`, there are two places where this content needs to be udpated:
-> 
 >  on:
->  
 >   push:
->   
 >    branches:
->    
 >      - main
 
 
