@@ -173,6 +173,7 @@ The whole *theme* styling is generated around **primary** color in order to be e
 ### `package.json`
 
 * `name` property needs to be udpated to the name of the repository
+* `deploy` set it to the correct URL
 * `node` is set to version 14.15.1,
 * `npm` is set to version 6.14.11
 
