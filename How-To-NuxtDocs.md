@@ -282,3 +282,9 @@ jobs:
 ```
 
 Then commit this changes to your repository. Once complete, you'll see your gh-pages branch updated as well as your site.
+
+## Errors
+
+Run this command to install `nuxt-youtube-subscribe-module` if missing.
+
+`$ npm install nuxt-youtube-subscribe-module --save`
