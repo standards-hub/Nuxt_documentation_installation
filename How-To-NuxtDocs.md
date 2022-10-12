@@ -299,3 +299,11 @@ An example of the content on the `components/global` folder can be found in this
 ### GitHub Pages are not Deploying Content
 See related content on https://nuxtjs.org/deployments/github-pages/#deploy-nuxt-on-github-pages
 
+`package.json`
+Line     "deploy": "npm run build && gh-pages -d dist -t true --repo https://github.com/OpenMobileAlliance/oma_working_groups.git" was replaced by line
+"deploy": "push-dir --dir=dist --branch=gh-pages --cleanup" follwo up by the commands:
+
+npm run generate
+npm run deploy
+
+
