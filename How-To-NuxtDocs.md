@@ -292,6 +292,6 @@ Run this command to install `nuxt-youtube-subscribe-module` if missing.
 `$ npm install nuxt-youtube-subscribe-module --save`
 
 ## Footer, Header is Not Displayed
-Some repositories have the ability to display a `Youtube` and `LinkedIn` logo at the header. This is in addition to the traditional `Twitter` and `GitHub` logols.
-It was necessary to introduce further functionality to display the `Youtube` and `LinkedIn` logos. This functionality was introduced in a new folder called  `components/global`. 
-Example of this folder can be found in this repo, [dmse-documenation](https://github.com/OpenMobileAlliance/dmse-documentation/tree/master/components/global)
+Some repositories have the ability to display a `Youtube` and `LinkedIn` logo at the header of the GitHub pages. This is in addition to the traditional `Twitter` and `GitHub` logols. To display the `Youtube` and `LinkedIn` logos, it was necessary to introduce new functionality into the folder  `components/global`. 
+
+An example of the content on the `components/global` folder can be found in this repo, [dmse-documenation](https://github.com/OpenMobileAlliance/dmse-documentation/tree/master/components/global)
