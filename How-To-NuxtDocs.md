@@ -306,4 +306,6 @@ Line     "deploy": "npm run build && gh-pages -d dist -t true --repo https://git
 npm run generate
 npm run deploy
 
+### New Installation of Nuxt App
+Run `npm install` command and then, run `npm run dev`.
 
