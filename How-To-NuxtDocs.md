@@ -309,3 +309,16 @@ npm run deploy
 ### New Installation of Nuxt App
 Run `npm install` command and then, run `npm run dev`.
 
+
+Some repositories have the ability to display a `Youtube` and `LinkedIn` logo at the header of the GitHub pages. This is in addition to the traditional `Twitter` and `GitHub` logols. To display the `Youtube` and `LinkedIn` logos, it was necessary to introduce new functionality into the folder  `components/global`. 
+
+### Local Error when deploying locally
+
+<img width="468" alt="image" src="https://user-images.githubusercontent.com/3258579/197654997-7625bb4b-f84f-48a7-9bb4-891006e9a8fe.png">
+
+To resolved this issue, I run `npm install -D babel-loader @babel/core @babel/preset-env`
+
+See PR, https://github.com/OpenMobileAlliance/oma_working_groups/pull/19 for further details.
+
+### Error Unable to Deploy into Origin `gh-pages`
+I made myself Administrator for the repository.
