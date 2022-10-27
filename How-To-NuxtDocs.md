@@ -110,6 +110,10 @@ If you wish to set tracking information for this branch you can do so with:
 jpradocueva@MacBook-Pro handbook % git branch --set-upstream-to=origin/main  main
 branch 'main' set up to track 'origin/main'.
 ```
+##### Continuation
+The error is resolved by toggling the allow-unrelated-histories switch. After a git pull or git merge command, add the following tag:
+
+`git pull origin master --allow-unrelated-histories`
 
 ---
 
