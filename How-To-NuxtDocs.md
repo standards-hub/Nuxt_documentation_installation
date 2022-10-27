@@ -92,6 +92,25 @@ Then run the command:
 
 This should resolve the issue.
 
+#### Help
+Commands to run when the local repository is not yet link with the GitHub repository.
+
+```bash
+jpradocueva@MacBook-Pro handbook % git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> main
+
+jpradocueva@MacBook-Pro handbook % git branch --set-upstream-to=origin/main  main
+branch 'main' set up to track 'origin/main'.
+```
+
 ---
 
 ` $ git push --set-upstream upstream main`
