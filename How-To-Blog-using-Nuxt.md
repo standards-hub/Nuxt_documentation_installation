@@ -17,7 +17,7 @@ npx create-nuxt-app <blog-project-name>
 yarn create nuxt-app <blog-project-name>
 ```
 
-### Exmaple
+### Example
 
 In this document we well create `My-Blog` using npm.
 
@@ -25,7 +25,7 @@ In this document we well create `My-Blog` using npm.
 npm init nuxt-app my-blog
 ```
 
-Once the `nuxt-app` project template is downloaded to your local machi`ne a set of questions will guide you through granurally configuring the `my-blog` project.
+Once the `nuxt-app` project template is downloaded to your local machine a set of questions will guide you through granurally configuring the `my-blog` project.
 
 ```bash
 create-nuxt-app v3.7.1
@@ -150,8 +150,8 @@ cd my-project
 
 ### Initial cleaning up
 
-Before we start with the newly created *Blog* content we need to clean up the one provided by the used project template.
-Creating the project from the template speed up the creating process but the content put do demonstrate how nuxt works is not needed.
+Before we start with the newly created *Blog* content, we need to clean up the one provided by the used project template.
+Creating the project from the template speed up the creating process but the content put do demonstrate how nuxt works are not needed.
 
 The files that needs to be deleted are:
 ```bash
@@ -218,7 +218,7 @@ Create an `articles/` folder where the *Blog* articles will be stored.
 mkdir content/articles
 ```
 
-Now create the first article in a markdown file `content/articles/first-post.md`. Put some initial conntent in it.
+Now create the first article in a markdown file `content/articles/first-post.md`. Put some initial content in it.
 
 
 ```md
@@ -234,7 +234,7 @@ alt: my first blog post
 This is an example of content of the First post in **My Blog**.
 ```
 
-To display content in our *Bog* page, we can use nuxt [dynamic pages](https://nuxtjs.org/docs/directory-structure/pages/#dynamic-pages) capability. Create a page named `_slug.vue` inside `pages/blog` folder. This will enable using the `params.slug` variable provided by vue router to get the name of each article.
+To display content in our *Blog* page, we can use nuxt [dynamic pages](https://nuxtjs.org/docs/directory-structure/pages/#dynamic-pages) capability. Create a page named `_slug.vue` inside `pages/blog` folder. This will enable using the `params.slug` variable provided by vue router to get the name of each article.
 
 Inside put the following content:
 
@@ -419,13 +419,13 @@ Created component can be used in other pages to show information about the autho
 </template>
 ```
 
-More on how Nuxt handle custom components can be find [here](https://nuxtjs.org/docs/directory-structure/components). 
+More on how Nuxt handles custom components can be found [here](https://nuxtjs.org/docs/directory-structure/components). 
 
 ## Assets
 
-The `assets` directory contains un-compiled assets such as Stylus or Sass files, images, or fonts. The special care should be taken when referencing different type of assets in pages, CSS files or as part of the blog building process.
+The `assets` directory contains un-compiled assets such as Stylus or Sass files, images, or fonts. Special care should be taken when referencing different typies of assets in pages, CSS files or as part of the blog-building process.
 
-More details can be find at [assets directory](https://nuxtjs.org/docs/directory-structure/assets) page.
+More details can be found at [assets directory](https://nuxtjs.org/docs/directory-structure/assets) page.
 
 The `static` directory is directly mapped to the server root and contains files that won't be changed. All files in this folder will be automatically served by Nuxt through project root URL. Be sure to check [static](https://nuxtjs.org/docs/directory-structure/static) folder documentation to know how to use and configure it if desired.
 
@@ -471,7 +471,7 @@ In this way Google will have an easier time parsing blog content and have good l
 
 ## Deploy
 
-Since this is a Nuxt project it should follow the deployment recommendations from the official Nuxt documentation. There are multiple [deployment targets](https://nuxtjs.org/deployments) explain there but the one for the GitHub pages will be the one we will be using in this document.
+Since this is a Nuxt project it should follow the deployment recommendations from the official Nuxt documentation. There are multiple [deployment targets](https://nuxtjs.org/deployments) explaining there but the one for the GitHub pages will be the one we will be using in this document.
 
 To deploy via [GitHub Actions](https://github.com/features/actions), create or adjust the workflow which pushes the generated files from the `dist` folder to your default GitHub Pages branch `gh-pages`.
 
